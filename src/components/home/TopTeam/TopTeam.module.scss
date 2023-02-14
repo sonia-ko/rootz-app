@@ -1,0 +1,40 @@
+.team {
+  min-height: 70vh;
+  &__paragraph {
+    text-align: center;
+  }
+
+  .members {
+    width: 100%;
+    position: relative;
+    &__pictures {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 10;
+    }
+    &__dashesLeft {
+      position: absolute;
+      top: 10rem;
+      left: 14rem;
+      z-index: -5;
+    }
+    &__dashesRight {
+      position: absolute;
+      z-index: 5;
+      top: 18rem;
+      left: 45vw;
+      z-index: -5;
+    }
+    &__first {
+      margin-top: 3rem;
+    }
+    &__second {
+      margin-top: 17rem;
+    }
+    &__third {
+      margin-top: 2rem;
+    }
+  }
+}

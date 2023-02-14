@@ -1,0 +1,27 @@
+.white {
+  width: 145px;
+  height: 48px;
+  background-color: #fff;
+  box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  &:hover {
+    background-color: rgb(180, 171, 171);
+  }
+}
+
+.orange {
+  background: #f2726c;
+  border-radius: 30px;
+  padding: 1rem 3rem;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
+  color: #fff;
+  text-transform: uppercase;
+}
