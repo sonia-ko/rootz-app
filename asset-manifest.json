@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/rootz-app/static/css/main.58eb2269.css",
+    "main.js": "/rootz-app/static/js/main.8c65b4f0.js",
+    "static/js/787.bd8bbdcb.chunk.js": "/rootz-app/static/js/787.bd8bbdcb.chunk.js",
+    "static/media/employee-3.png": "/rootz-app/static/media/employee-3.f86eff6b6dfc1d1627ea.png",
+    "static/media/forests.png": "/rootz-app/static/media/forests.5f3263b55714065609f6.png",
+    "static/media/trees.png": "/rootz-app/static/media/trees.9b719d5ea0b055adff20.png",
+    "static/media/employee-1.png": "/rootz-app/static/media/employee-1.eb77c265cfca5e56fec3.png",
+    "static/media/employee-2.png": "/rootz-app/static/media/employee-2.7346a169ad78b436f037.png",
+    "static/media/save-water.png": "/rootz-app/static/media/save-water.774eb78b0f75657eb69f.png",
+    "static/media/plastik.png": "/rootz-app/static/media/plastik.6673935c4274eaa9bb81.png",
+    "static/media/energy.png": "/rootz-app/static/media/energy.11066ae9707472e596f3.png",
+    "static/media/parrot.png": "/rootz-app/static/media/parrot.fa871bc49d9d0c18f5cc.png",
+    "static/media/headline.png": "/rootz-app/static/media/headline.b330c98743d52eb94895.png",
+    "index.html": "/rootz-app/index.html",
+    "main.58eb2269.css.map": "/rootz-app/static/css/main.58eb2269.css.map",
+    "main.8c65b4f0.js.map": "/rootz-app/static/js/main.8c65b4f0.js.map",
+    "787.bd8bbdcb.chunk.js.map": "/rootz-app/static/js/787.bd8bbdcb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58eb2269.css",
+    "static/js/main.8c65b4f0.js"
+  ]
+}
