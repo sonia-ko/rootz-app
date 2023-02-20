@@ -10,14 +10,33 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
-    border-bottom: 4px solid #222433;
-
+    border-bottom: 0.25rem solid #222433;
+    .mobileMenuIcon {
+      display: none;
+    }
     .navigationContainer {
       width: 50%;
       .navigation {
         display: flex;
         justify-content: space-around;
         width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    .innerContainer {
+      padding: 2rem 0 1.5rem;
+      .sideNavigation {
+        display: none;
+      }
+      .navigationContainer {
+        display: none;
+      }
+      .mobileMenuIcon {
+        display: flex;
       }
     }
   }

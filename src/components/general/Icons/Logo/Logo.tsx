@@ -1,9 +1,10 @@
 import React from 'react';
-import classes from './Icons.module.css';
+import classes from './Icons.module.scss';
 
 const Logo: React.FC = () => {
   return (
     <svg
+      className={classes.icon}
       width='112'
       height='39'
       viewBox='0 0 112 39'

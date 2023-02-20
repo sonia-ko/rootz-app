@@ -1,11 +1,8 @@
 import React from 'react';
+import WillBeSoon from '../../components/general/WillBeSoon/WIllBeSoon';
 
 const Apply: React.FC = () => {
-  return (
-    <section>
-      <h2>This page will be there soon</h2>
-    </section>
-  );
+  return <WillBeSoon pageName='Apply' />;
 };
 
 export default Apply;

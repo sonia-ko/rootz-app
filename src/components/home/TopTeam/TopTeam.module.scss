@@ -1,40 +1,267 @@
 .team {
-  min-height: 70vh;
+  min-height: 30vh;
+  padding-top: 8vh;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
   &__paragraph {
     text-align: center;
+    width: 20%;
   }
 
   .members {
     width: 100%;
     position: relative;
+    min-height: 50vh;
     &__pictures {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       z-index: 10;
     }
     &__dashesLeft {
       position: absolute;
-      top: 10rem;
-      left: 14rem;
+      top: 4rem;
+      left: 12vw;
       z-index: -5;
     }
     &__dashesRight {
       position: absolute;
       z-index: 5;
-      top: 18rem;
+      top: 12rem;
       left: 45vw;
       z-index: -5;
     }
     &__first {
-      margin-top: 3rem;
+      margin-top: 1rem;
     }
     &__second {
-      margin-top: 17rem;
+      margin-top: 6rem;
+      position: absolute;
+      top: 10rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
     }
     &__third {
-      margin-top: 2rem;
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .team {
+    padding-top: 5vh;
+    &__paragraph {
+      width: 40%;
+    }
+    .members {
+      min-height: 50vh;
+
+      &__dashesLeft {
+        position: absolute;
+        top: 4rem;
+        left: 10vw;
+      }
+      &__dashesRight {
+        top: 10rem;
+        left: 45vw;
+      }
+      &__first {
+        width: 28%;
+      }
+      &__second {
+        width: 28%;
+      }
+      &__third {
+        width: 23%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .team {
+    .members {
+      min-height: 50vh;
+
+      &__dashesLeft {
+        top: 5rem;
+        left: 10vw;
+      }
+      &__dashesRight {
+        top: 10rem;
+        left: 38vw;
+      }
+      &__first {
+        width: 26%;
+      }
+      &__second {
+        width: 26%;
+      }
+      &__third {
+        width: 24%;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .team {
+    &__paragraph {
+      width: 60%;
+      padding-bottom: 3rem;
+    }
+    .members {
+      min-height: 50vh;
+      &__pictures {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &__dashesLeft {
+        top: 5rem;
+        left: 10rem;
+      }
+      &__dashesRight {
+        top: 20rem;
+        left: 22vw;
+      }
+      &__first {
+        width: 19rem;
+        top: 25rem;
+      }
+      &__second {
+        width: 19rem;
+        top: 14rem;
+        left: unset;
+        right: 0;
+      }
+      &__third {
+        width: 15rem;
+        margin-top: 9rem;
+        margin-left: 10vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    &__paragraph {
+      width: 70%;
+    }
+    .members {
+      &__dashesLeft {
+        transform: rotate(13deg);
+        top: 12rem;
+        left: unset;
+        right: 10vw;
+      }
+      &__dashesRight {
+        transform: rotate(136deg);
+        top: unset;
+        bottom: 32vw;
+        left: 13vw;
+      }
+      &__first {
+        width: 45vw;
+      }
+      &__second {
+        width: 45vw;
+        margin: 0;
+        align-self: flex-end;
+        position: static;
+        margin-top: 1rem;
+      }
+      &__third {
+        width: 35vw;
+        margin-top: 2rem;
+        margin-left: 10vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .team {
+    &__paragraph {
+      width: 70%;
+    }
+    .members {
+      &__dashesLeft {
+        top: 10rem;
+        right: 10vw;
+      }
+      &__dashesRight {
+        bottom: 24vw;
+        left: 13vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .team {
+    &__paragraph {
+      width: 70%;
+    }
+    .members {
+      &__dashesLeft {
+        top: 10rem;
+        right: 8vw;
+        width: 50vw;
+      }
+      &__dashesRight {
+        bottom: 30vw;
+        left: 13vw;
+        width: 50vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .team {
+    .members {
+      &__dashesLeft {
+        top: 5rem;
+      }
+      &__dashesRight {
+        bottom: 37vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .team {
+    .members {
+      &__dashesLeft {
+        display: none;
+      }
+      &__dashesRight {
+        display: none;
+      }
+      &__first {
+        width: 75vw;
+        margin: 0 auto;
+      }
+      &__second {
+        width: 75vw;
+        margin: 0 auto;
+        align-self: flex-end;
+        position: static;
+        margin-top: 1rem;
+      }
+      &__third {
+        width: 65vw;
+        margin-top: 0 auto;
+      }
     }
   }
 }

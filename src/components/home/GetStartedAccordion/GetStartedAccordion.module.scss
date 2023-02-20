@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+  .accordion {
+    width: 46%;
+  }
+  &__textBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 46%;
+  }
+  &__description {
+    margin: 0 0 3rem;
+  }
+  &__title {
+    text-align: left;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    margin-top: 5rem;
+    .accordion {
+      width: 56%;
+    }
+    &__textBlock {
+      width: 36%;
+    }
+    &__description {
+      margin: 0 0 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    .accordion {
+      margin-top: 1rem;
+      width: 100%;
+    }
+    &__textBlock {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 80%;
+    }
+    &__description {
+      margin: 0 0 2rem;
+    }
+  }
+}

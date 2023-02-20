@@ -1,0 +1,227 @@
+.container {
+  margin: 5rem auto 5rem;
+  &__inner {
+    background-color: #ffbd9e;
+    border-radius: 1.25rem;
+    display: flex;
+    padding: 5rem 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .description {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5rem;
+    &__title {
+      text-align: left;
+    }
+  }
+  .form {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #f7f3f4;
+    border-radius: 1rem;
+    padding: 2rem 2rem 3rem;
+    margin-right: 5rem;
+    &__input {
+      background: #ffffff;
+      border-radius: 2.5rem;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 2.5rem;
+    }
+    &__inputEmail {
+      margin-bottom: 3rem;
+    }
+    &__leafOrange {
+      position: absolute;
+      top: -1rem;
+      right: -1rem;
+    }
+    &__leafBlue {
+      position: absolute;
+      top: 3rem;
+      right: -1rem;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    margin: 4rem auto;
+    &__inner {
+      padding: 4.5rem 0;
+    }
+
+    .description {
+      width: 37%;
+      padding-left: 4.5rem;
+    }
+    .form {
+      margin-right: 4.5rem;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: 0 auto 2rem;
+    &__inner {
+      padding: 3.5rem 0;
+    }
+
+    .description {
+      width: 37%;
+      padding-left: 4rem;
+    }
+    .form {
+      width: 37%;
+      padding: 1.5rem 1.5rem 2.5rem;
+      margin-right: 4rem;
+      &__input {
+        margin: 0.75rem 0;
+      }
+      &__inputEmail {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    margin: 4rem auto 2rem;
+    &__inner {
+      padding: 2.5rem 0;
+    }
+
+    .description {
+      width: 37%;
+      padding-left: 2.5rem;
+    }
+    .form {
+      width: 37%;
+      padding: 0.75rem 1.5rem 2.25rem;
+      margin-right: 2.5rem;
+      &__input {
+        margin: 0.75rem 0;
+      }
+      &__inputEmail {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 5rem auto 3rem;
+    &__inner {
+      flex-direction: column;
+      padding: 2.5rem 0;
+    }
+
+    .description {
+      width: 80%;
+      padding: 0;
+      margin: 0 auto;
+    }
+    .form {
+      width: 80%;
+      padding: 0;
+      margin: 3rem auto 0;
+      padding: 1rem 2rem 2.5rem;
+
+      &__input {
+        margin: 0.85rem 0;
+      }
+      &__inputEmail {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    &__inner {
+      padding: 1.5rem 0;
+    }
+
+    .form {
+      margin: 2.5rem auto 0;
+      padding: 1rem 1.5rem 2rem;
+
+      &__input {
+        margin: 0.75rem 0;
+      }
+      &__inputEmail {
+        margin-bottom: 1.75rem;
+      }
+      &__leafOrange {
+        right: -2vw;
+        width: 10vw;
+      }
+      &__leafBlue {
+        width: 5vw;
+        top: 2.5rem;
+        right: -2vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .container {
+    &__inner {
+      padding: 1.25rem 0 0.25rem;
+    }
+
+    .description {
+      &__title {
+        margin: 1rem 0 0.75rem;
+      }
+    }
+
+    .form {
+      width: 86%;
+      max-width: 86%;
+      margin: 2.25rem auto 0;
+      padding: 0.5rem 1rem 1rem;
+
+      &__input {
+        margin: 0.5rem 0;
+      }
+      &__inputEmail {
+        margin-bottom: 1.5rem;
+      }
+
+      &__leafBlue {
+        width: 5vw;
+        top: 2rem;
+        right: -2vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .container {
+    .form {
+      margin: 0 auto 0;
+      background-color: transparent;
+
+      &__leafOrange {
+        display: none;
+      }
+      &__leafBlue {
+        display: none;
+      }
+    }
+  }
+}

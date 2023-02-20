@@ -1,27 +1,99 @@
 .white {
-  width: 145px;
-  height: 48px;
+  width: 9.063rem;
+  height: 3rem;
   background-color: #fff;
-  box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
-  border-radius: 40px;
+  box-shadow: 0 1.875rem 2.5rem rgba(240, 101, 126, 0.05);
+  border-radius: 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 140%;
-  &:hover {
-    background-color: rgb(180, 171, 171);
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(226, 206, 206);
+    opacity: 0;
+    transition-duration: 600ms !important;
+    transition-property: opacity, right !important;
+    border-radius: 1.875rem;
+  }
+  &:hover::before {
+    right: 0;
+    opacity: 1;
   }
 }
 
 .orange {
+  display: block;
   background: #f2726c;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   padding: 1rem 3rem;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.813rem;
   line-height: 140%;
   color: #fff;
   text-transform: uppercase;
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+  &:hover {
+    cursor: pointer;
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #d82c23;
+    opacity: 0;
+    transition-duration: 600ms !important;
+    transition-property: opacity, right !important;
+    border-radius: 1.875rem;
+  }
+  &:hover::before {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 991px) {
+  .orange {
+    padding: 1rem 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .orange {
+    font-size: 0.75rem;
+  }
+
+  .white {
+    width: 100%;
+    height: 4rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .orange {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .orange {
+    padding: 1rem 1.25em;
+  }
 }

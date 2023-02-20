@@ -1,0 +1,14 @@
+.openIcon,
+.closeIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  circle {
+    fill: #f2726c;
+  }
+  &:hover {
+    cursor: pointer;
+    circle {
+      fill: #cf1e15;
+    }
+  }
+}

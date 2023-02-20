@@ -1,12 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import classes from './Header.module.scss';
 import { websiteNavigation } from '../../../static/websiteData';
 import { sideNavigation } from '../../../static/websiteData';
 import Logo from '../Icons/Logo/Logo';
+import HamburgerIcon from '../Icons/HamburgerIcon/HamburgerIcon';
 import Button from '../Button/Button';
+import classes from './Header.module.scss';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  menuMobileOpen: boolean;
+  onMenuClick: () => void;
+}
+const Header: React.FC<HeaderProps> = ({ onMenuClick, menuMobileOpen }) => {
   return (
     <header className={classes.container}>
       <div className={`${classes.innerContainer} container`}>
@@ -24,15 +29,20 @@ const Header: React.FC = () => {
           </ul>
         </nav>
 
-        <div>
+        <div className={classes.sideNavigation}>
           {sideNavigation.map((el) => (
             <Button
               btnText={el.title}
               btnStyle='white'
               isLink={true}
               btnPath={el.path}
+              key={el.title}
             />
           ))}
+        </div>
+
+        <div className={classes.mobileMenuIcon}>
+          <HamburgerIcon menuOpen={menuMobileOpen} handleClick={onMenuClick} />
         </div>
       </div>
     </header>

@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from './Icons.module.css';
 
 const GeolocationIcon: React.FC = () => {
   return (

@@ -1,6 +1,5 @@
 $color-white: #fff;
 $color-black: #111111;
-$spacing: 5px;
 
 .banner {
   padding-top: 25vh;
@@ -9,23 +8,27 @@ $spacing: 5px;
     linear-gradient(0deg, #febd2f, #febd2f),
     radial-gradient(178.57% 327.71% at 110.1% 3.35%, #ff605b 0%, #ffee30 100%),
     #27d07d;
+  &__h1 {
+    display: none;
+  }
   &__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   &__headline {
-    // margin-bottom: 1rem;
+    max-width: 100%;
   }
   &__paragraph {
     width: 60%;
     margin: 2rem 0 3rem;
   }
-  &__columnLeft {
-  }
 
   &__columnRight {
     position: relative;
+  }
+  &__mainImg {
+    max-width: 100%;
   }
 
   .searchBox {
@@ -36,7 +39,7 @@ $spacing: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 30px 40px rgba(240, 101, 126, 0.05);
+    box-shadow: 0 1.875rem 2.5rem rgba(240, 101, 126, 0.05);
     padding-left: 0.5rem;
     &__input {
       width: 14.5rem;
@@ -48,12 +51,13 @@ $spacing: 5px;
     position: absolute;
     top: 18rem;
     left: -6rem;
-    width: 304px;
-    height: 360px;
+    width: 19rem;
+    height: 22.5rem;
     z-index: 1;
     &__mainImg {
       width: 100%;
       height: 100%;
+      max-width: 100%;
     }
     &__headImg {
       position: absolute;
@@ -62,7 +66,7 @@ $spacing: 5px;
     }
     &__title {
       font-weight: 700;
-      font-size: 20px;
+      font-size: 1.25rem;
       line-height: 140%;
       color: $color-white;
       position: absolute;
@@ -71,12 +75,255 @@ $spacing: 5px;
     }
     &__number {
       font-weight: 700;
-      font-size: 56px;
-      line-height: 80px;
+      font-size: 3.5rem;
+      line-height: 5rem;
       color: $color-white;
       position: absolute;
       bottom: 1rem;
       left: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .banner {
+    padding-top: 22vh;
+    min-height: 65vh;
+
+    &__columnRight {
+      padding-left: 10rem;
+    }
+    &__paragraph {
+      width: 75%;
+      margin: 1rem 0 2rem;
+    }
+
+    &__headline {
+      max-width: 80%;
+      margin-bottom: 1rem;
+    }
+    .card {
+      top: 15vw;
+      left: 3rem;
+      width: 18vw;
+      height: 20vw;
+
+      &__title {
+        font-size: 1rem;
+        line-height: 10%;
+        left: 1.5rem;
+      }
+      &__number {
+        font-size: 2.5rem;
+        left: 1.5rem;
+      }
+      &__headImg {
+        left: 1.5rem;
+        width: 20%;
+      }
+    }
+    .searchBox {
+      width: 24rem;
+      &__input {
+        width: 11.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .banner {
+    min-height: 50vh;
+    &__columnRight {
+      padding-left: 2.5rem;
+    }
+    &__headline {
+      max-width: 70%;
+      margin-bottom: 0;
+    }
+    .card {
+      top: 20vw;
+      left: 3rem;
+      width: 15vw;
+      height: 18vw;
+
+      &__title {
+        font-size: 0.8rem;
+        left: 1rem;
+        bottom: 4.5rem;
+      }
+      &__number {
+        font-size: 2rem;
+        left: 1rem;
+        bottom: 2.5rem;
+        line-height: 0;
+      }
+      &__headImg {
+        left: 1rem;
+        top: 1rem;
+      }
+    }
+    .searchBox {
+      width: 23rem;
+      &__input {
+        width: 10rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .banner {
+    &__columnRight {
+      padding-left: 0rem;
+    }
+    .card {
+      left: unset;
+      right: 0;
+      top: 12rem;
+      width: 20vw;
+      height: 25vw;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    min-height: 90vh;
+    max-height: 108vh;
+    margin-bottom: 25vh;
+    &__inner {
+      flex-direction: column;
+    }
+    &__headline {
+      max-width: 100%;
+    }
+    &__paragraph {
+      width: 100%;
+      line-height: 2rem;
+    }
+
+    &__columnRight {
+      overflow-x: hidden;
+      max-width: 97vw;
+    }
+    &__mainImg {
+      width: 40rem;
+      padding-left: 30vw;
+      max-width: 200rem;
+    }
+
+    .searchBox {
+      width: 95%;
+      padding-left: 1rem;
+      padding-right: 0.75rem;
+
+      &__input {
+        width: 80%;
+      }
+    }
+
+    .card {
+      width: 15.063rem;
+      height: 17.813rem;
+      left: 0;
+      margin-left: 20vw;
+      top: 20rem;
+      &__headImg {
+        width: 2.042rem;
+        height: 2.383rem;
+        padding: 1rem 0 0 1rem;
+      }
+      &__title {
+        padding-left: 1rem;
+        bottom: 5.5rem;
+        bottom: 5rem;
+      }
+      &__number {
+        padding-left: 1rem;
+        bottom: 3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    min-height: 100vh;
+    max-height: 100vh;
+    margin-bottom: 25vh;
+
+    &__columnRight {
+      max-width: 96vw;
+    }
+    &__mainImg {
+      padding-top: 1rem;
+      width: 35rem;
+      padding-left: 10vw;
+      max-width: 35rem;
+    }
+
+    .searchBox {
+      width: 98%;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+
+      &__input {
+        width: 80%;
+        margin-left: 0.5rem;
+      }
+    }
+
+    .card {
+      width: 13.776rem;
+      height: 16.618rem;
+      margin-left: 15vw;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .banner {
+    min-height: 80vh;
+    max-height: 80vh;
+    margin-bottom: 20vh;
+
+    &__columnRight {
+      max-width: 95vw;
+    }
+    &__mainImg {
+      padding-top: 1rem;
+      width: 25rem;
+      padding-left: 10vw;
+      max-width: 25rem;
+    }
+
+    .searchBox {
+      width: 98%;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+
+      &__input {
+        width: 80%;
+        margin-left: 0.5rem;
+      }
+    }
+
+    .card {
+      top: 15rem;
+      left: 0;
+      padding-left: 0;
+      width: 12.526rem;
+      height: 15.368rem;
+      margin-left: 15vw;
+    }
+  }
+}
+
+@media (max-width: 322px) {
+  .banner {
+    &__columnRight {
+      max-width: 90vw;
     }
   }
 }

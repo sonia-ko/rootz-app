@@ -1,7 +1,6 @@
 import React from 'react';
-import classes from './Button.module.scss';
 import { Link } from 'react-router-dom';
-import arrowAfterIcon from '../../../assets/general/icon-arrow-right.png';
+import classes from './Button.module.scss';
 
 interface ButtonProps {
   btnText: string;

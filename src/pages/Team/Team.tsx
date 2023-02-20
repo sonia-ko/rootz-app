@@ -1,11 +1,8 @@
 import React from 'react';
+import WillBeSoon from '../../components/general/WillBeSoon/WIllBeSoon';
 
 const Team: React.FC = () => {
-  return (
-    <section>
-      <h2>This page will be there soon</h2>
-    </section>
-  );
+  return <WillBeSoon pageName='Team' />;
 };
 
 export default Team;

@@ -9,8 +9,8 @@ import employee3 from '../../../assets/home/employee-3.png';
 
 const TopTeam: React.FC = () => {
   return (
-    <div className={classes.team}>
-      <div className='container__inner'>
+    <section className={classes.team}>
+      <div className={`${classes.team__container} container__inner`}>
         <h2>Our top team</h2>
         <p className={classes.team__paragraph}>
           Learn more about how you can save our planet's nature.
@@ -45,7 +45,7 @@ const TopTeam: React.FC = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

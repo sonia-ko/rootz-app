@@ -11,14 +11,15 @@ import { numberOfMembers } from '../../../static/websiteData';
 
 const HomeBanner: React.FC = () => {
   return (
-    <div className={classes.banner}>
-      <div className={`${classes.banner__inner} container--inner`}>
+    <section className={classes.banner}>
+      <div className={`${classes.banner__inner} container__inner`}>
         <div className={classes.banner__columnLeft}>
           <img
             className={classes.banner__headline}
             src={Headline}
             alt='Nature needs you'
           />
+          <h1 className={classes.banner__h1}>Nature needs you</h1>
           <p className={classes.banner__paragraph}>
             The scale of the challenges facing our planet can seem daunting, but
             we can all do something.
@@ -39,7 +40,7 @@ const HomeBanner: React.FC = () => {
           </div>
         </div>
         <div className={classes.banner__columnRight}>
-          <img src={Parrot} alt='Parrot' />
+          <img className={classes.banner__mainImg} src={Parrot} alt='Parrot' />
           <div className={classes.card}>
             <img className={classes.card__mainImg} src={CardImg} alt='card' />
             <img
@@ -52,7 +53,7 @@ const HomeBanner: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
