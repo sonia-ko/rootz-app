@@ -123,7 +123,7 @@
     margin: 5rem auto 3rem;
     &__inner {
       flex-direction: column;
-      padding: 2.5rem 0;
+      padding: 1.25rem 0.75rem 2.25rem;
     }
 
     .description {
@@ -132,7 +132,7 @@
       margin: 0 auto;
     }
     .form {
-      width: 80%;
+      width: 85%;
       padding: 0;
       margin: 3rem auto 0;
       padding: 1rem 2rem 2.5rem;
@@ -149,10 +149,6 @@
 
 @media (max-width: 576px) {
   .container {
-    &__inner {
-      padding: 1.5rem 0;
-    }
-
     .form {
       margin: 2.5rem auto 0;
       padding: 1rem 1.5rem 2rem;
@@ -178,10 +174,6 @@
 
 @media (max-width: 415px) {
   .container {
-    &__inner {
-      padding: 1.25rem 0 0.25rem;
-    }
-
     .description {
       &__title {
         margin: 1rem 0 0.75rem;
