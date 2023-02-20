@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rootz-app/static/css/main.58eb2269.css",
+    "main.css": "/rootz-app/static/css/main.c45f15cd.css",
     "main.js": "/rootz-app/static/js/main.8ff51da1.js",
     "static/js/787.bd8bbdcb.chunk.js": "/rootz-app/static/js/787.bd8bbdcb.chunk.js",
     "static/media/employee-3.png": "/rootz-app/static/media/employee-3.f86eff6b6dfc1d1627ea.png",
@@ -14,12 +14,12 @@
     "static/media/parrot.png": "/rootz-app/static/media/parrot.fa871bc49d9d0c18f5cc.png",
     "static/media/headline.png": "/rootz-app/static/media/headline.b330c98743d52eb94895.png",
     "index.html": "/rootz-app/index.html",
-    "main.58eb2269.css.map": "/rootz-app/static/css/main.58eb2269.css.map",
+    "main.c45f15cd.css.map": "/rootz-app/static/css/main.c45f15cd.css.map",
     "main.8ff51da1.js.map": "/rootz-app/static/js/main.8ff51da1.js.map",
     "787.bd8bbdcb.chunk.js.map": "/rootz-app/static/js/787.bd8bbdcb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58eb2269.css",
+    "static/css/main.c45f15cd.css",
     "static/js/main.8ff51da1.js"
   ]
 }
